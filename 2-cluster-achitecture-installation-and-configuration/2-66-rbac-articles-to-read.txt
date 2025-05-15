@@ -1,0 +1,9 @@
+https://kubernetes.io/docs/reference/access-authn-authz/authorization/
+
+https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+
+https://www.sumologic.com/glossary/role-based-access-control/
+
+https://www.cncf.io/blog/2018/08/01/demystifying-rbac-in-kubernetes/
+
+https://thenewstack.io/three-realistic-approaches-to-kubernetes-rbac/
