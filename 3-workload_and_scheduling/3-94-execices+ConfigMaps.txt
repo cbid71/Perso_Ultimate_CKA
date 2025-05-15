@@ -1,0 +1,85 @@
+***************************************************************************************************
+*                                                                                                 *
+* Subject: ConfigMap | Kubernetes                                                                 *
+*                                                                                                 *
+* Author: Srinath Challa | Kubernetes SME | Udemy                                                 *
+*                                                                                                 *
+* Connect me on:                                                                                  *    
+* --------------                                                                                  *
+* https://www.udemy.com/user/srinathchalla/                                                       *
+* https://www.linkedin.com/in/srinathchalla/                                                      *
+* https://www.youtube.com/srinathchalla                                                           *
+*                                                                                                 *
+* Reference:                                                                                      *
+* ----------                                                                                      *
+* https://kubernetes.io/docs/concepts/configuration/configmap/                                    *
+* https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/               *
+* https://cloud.google.com/kubernetes-engine/docs/concepts/configmap                              *
+* https://matthewpalmer.net/kubernetes-app-developer/articles/ultimate-configmap-guide-kubernetes.html
+*                                                                                                 *
+***************************************************************************************************
+
+In this demo:
+-------------
+We will create the ConfigMap using both Imperatively and Declaratively
+Next, we will use above ConfigMap into Pod, as environment variables, arguments, and files inside vol.
+
+
+NOTE: 
+-----
+a. To successfully finish this exercise, It is important to go through ConfigMap Concept and Demo videos in this series.
+b. You can refer to Kuberenetes Docs for help when needed.
+
+
+***************************************************************************************************
+
+STEP-1: Create ConfigMap: 
+-------------------------
+
+Create ConfigMap from literal values with below configuration
+
+ConfigMap Name: env-cm
+Literals: ENV_ONE=value1 & ENV_TWO=value2
+
+
+***************************************************************************************************
+
+
+STEP-2: Displaying ConfigMap:
+-----------------------------
+
+a. Display ConfigMap "env-cm" 
+b. Display ConfigMap "env-cm" and print that in YAML format.
+c. Display complete details of "env-cm" ConfigMap
+
+
+***************************************************************************************************
+
+
+STEP-3: Injecting ConfigMap into Pod As Environment Variables: 
+---------------------------------------------------------
+
+Configure & Deploy:
+-------------------
+a. Create the sample Pod with two environment variables. These two Env variables will get the values from "env-cm" ConfigMap.
+
+Validate:
+---------
+b. Run the env command inside the Pod to validate the above two environment variables are successfully configured.
+
+
+***************************************************************************************************
+
+STEP-4: Delete the ConfigMap:
+-----------------------------
+a. Delete the Pod and ConfigMap created in the above step.
+b. Ensure ConfigMap and Pod deleted successfully.
+
+
+
+***************************************************************************************************
+
+
+
+
+
